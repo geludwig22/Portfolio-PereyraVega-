@@ -1,0 +1,263 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+#container { 
+    background-color: rgb(71, 67, 67);
+    height: 100vp;
+    display: grid;
+    grid-template-columns: 
+        1fr 272fr 272fr 272fr 272fr 1fr
+    ;
+    grid-template-rows: 
+        200px 300px 373px 215px 1fr;
+    grid-template-areas: 
+     "header header header header header header"
+     ". profile profile main main ."
+     ". . section section . ."
+     ". . logos logos . ."
+     "footer footer footer footer footer footer"
+    ;
+}
+
+.header { 
+    grid-area: header;
+    background-image: url(../Media/partitura.jpg);
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header .nav{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+}
+.header .nav a{
+    text-decoration: none;
+    border: 2px solid lightslategray;
+    border-radius: 50em;
+    color: rgb(5, 5, 5);
+    padding: 15px 30px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header .nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+.main { 
+    grid-area: main;
+    padding: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+.main p{
+    justify-content: center;
+    color: wheat;
+}
+.main p:hover{
+    transform: scale(1.5);
+    color: lightgray; 
+}
+.profile {
+    grid-area: profile;
+}
+.profile img{
+    width: 40em;
+}
+
+section{
+    grid-area: section;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10em;
+}
+.logos {
+    grid-area: logos;
+}
+.logos img{
+    width: 85px;
+}
+footer{
+    background-color: black;
+    grid-area: footer;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* PAGINA ABOUT */
+
+#contenedor { 
+    background-color: rgb(250, 248, 248);
+    height: 100vp;
+    display: grid;
+    grid-template-columns: 
+        1fr 272fr 272fr 272fr 272fr 1fr
+    ;
+    grid-template-rows: 
+        100px 100px 373px 200px 1fr;
+    grid-template-areas: 
+     "header header header header header header"
+     ". . . . . ."
+     ". . main profile . ."
+     ". . . . . ."
+     "footer footer footer footer footer footer"
+    ;
+}
+
+.header_tutti {
+    grid-area: header;
+    background-color: whitesmoke;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+.header_tutti .nav{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+}
+.header_tutti .nav a{
+    text-decoration: none;
+    border: 2px solid lightslategray;
+    border-radius: 50em;
+    color: rgb(5, 5, 5);
+    padding: 15px 30px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header_tutti .nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+.mainAbout{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainAbout h1{
+    margin-bottom: 20px;
+}
+.mainAbout p{
+    text-align: start;
+    padding: 15px;
+    margin-right: 2em;
+}
+.profileAbout {
+    grid-area: profile;
+}
+.profileAbout img {
+    width: 35em;
+}
+
+/* PAGINA MEDIA */
+#contenedor3 { 
+    background-color: rgb(250, 248, 248);
+    height: 100vp;
+    display: grid;
+    grid-template-columns: 
+        1fr 272fr 272fr 272fr 272fr 1fr
+    ;
+    grid-template-rows: 
+        100px 400px 400px 400px 1fr;
+    grid-template-areas: 
+     "header header header header header header"
+     ". . vid1 text1  . ."
+     ". . vid2 text2  . ."
+     ". . vid3 text3  . ."
+     "footer footer footer footer footer footer"
+    ;
+}
+.vid1{
+    grid-area: vid1;
+    margin-top: 50px;
+}
+.vid2{
+    grid-area: vid2;
+    margin-top: 20px;
+}
+.vid3{
+    grid-area: vid3;
+    margin-top: 20px;
+}
+.text1 {
+    grid-area: text1;
+    text-align: justify;
+    margin-top: 50px;
+}
+.text2 {
+    grid-area: text2;
+    text-align: justify;
+    margin-top: 20px;
+}
+.text3 {
+    grid-area: text3;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* PAGINA CONTACTO */
+.form{
+    width: 350px;
+    margin-left: 20%;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;  
+}
+.form h2{
+    font-size: 45px;
+    margin: 15px;
+}
+.form input{
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 6px;
+    
+}
+.form textarea{
+    width: 350px;
+}
+.form button{
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* PAGINA NEWSLETTER */
+
+.newsletter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20em;
+}
+.newsletter h1{
+    font-size: 45px;
+    margin: 15px 0 40px;
+}
+
+.newsletter input{
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 6px;
+}
